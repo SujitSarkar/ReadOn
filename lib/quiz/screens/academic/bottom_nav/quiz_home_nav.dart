@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:read_on/controller/public_controller.dart';
-import 'package:read_on/eBook/ebook_widgets/custom_drawer.dart';
 import 'package:read_on/public_variables/color_variable.dart';
 import 'package:read_on/quiz/screens/academic/academic_subject_page.dart';
 import 'package:read_on/quiz/screens/bcs/bcs_home.dart';

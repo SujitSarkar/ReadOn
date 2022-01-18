@@ -12,13 +12,9 @@ void main() async{
   WidgetsFlutterBinding.ensureInitialized();
   HttpOverrides.global = MyHttpOverrides();
   /// Set Device orientation
-  final bool _isPhone = Device.get().isPhone;
   SharedPreferences pref = await SharedPreferences.getInstance();
-  if(_isPhone) {CColor.portraitMood;}
-  else {CColor.landscapeMood;}
-  pref.setBool('isPhone', _isPhone);
+  CColor.portraitMood;
   String? readOnUserId = pref.getString('readOnUserId');
-
   runApp(MyApp(readOnUserId: readOnUserId));
 }
 

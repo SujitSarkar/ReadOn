@@ -20,7 +20,7 @@ class _RecentTestState extends State<RecentTest> {
   @override
   Widget build(BuildContext context) {
     final PublicController publicController = Get.find();
-    double size = publicController.size.value;
+    final double size = publicController.size.value;
     return SafeArea(
       child: Scaffold(
         backgroundColor: Colors.white,
