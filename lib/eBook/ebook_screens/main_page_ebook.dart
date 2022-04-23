@@ -29,12 +29,15 @@ class _MainPageState extends State<MainPage> {
   Future<void> _customInit(EbookApiController ebookApiController,
       UserController userController) async {
     _count++;
-    if (ebookApiController.subjectCategoryList.isEmpty)
+    if (ebookApiController.subjectCategoryList.isEmpty) {
       ebookApiController.getSubjectCategoryNameList();
-    if (ebookApiController.writeModel.value.data!.isEmpty)
+    }
+    if (ebookApiController.writeModel.value.data!.isEmpty) {
       ebookApiController.getWriterList();
-    if (ebookApiController.publicationList.isEmpty)
+    }
+    if (ebookApiController.publicationList.isEmpty) {
       ebookApiController.getPublicationList();
+    }
     await userController.getCurrentUserId();
     ebookApiController.countNumberOfCarts(userController);
   }
@@ -96,7 +99,7 @@ class _MainPageState extends State<MainPage> {
           SizedBox(width: size * .04),
           GestureDetector(
             onTap: () {
-              Get.to(() => MyCartPage());
+              Get.to(() => const MyCartPage());
             },
             child: Container(
               width: size * .085,

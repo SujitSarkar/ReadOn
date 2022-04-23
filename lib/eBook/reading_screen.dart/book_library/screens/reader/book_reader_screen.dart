@@ -610,7 +610,6 @@ class _BookReaderScreenState extends State<BookReaderScreen>
                               Icons.text_fields_outlined,
                               color: Colors.black,
                             )),
-                        title: const Text(''),
                         backgroundColor: Colors.grey,
                       ),
                       BottomNavigationBarItem(
@@ -625,7 +624,6 @@ class _BookReaderScreenState extends State<BookReaderScreen>
                               Icons.fit_screen,
                               color: Colors.black,
                             )),
-                        title: const Text(''),
                         backgroundColor: Colors.grey,
                       ),
                       BottomNavigationBarItem(
@@ -637,7 +635,6 @@ class _BookReaderScreenState extends State<BookReaderScreen>
                               Icons.save_outlined,
                               color: Colors.black,
                             )),
-                        title: const Text(''),
                         backgroundColor: Colors.grey,
                       ),
                       BottomNavigationBarItem(
@@ -901,7 +898,7 @@ class _BookReaderScreenState extends State<BookReaderScreen>
                               Icons.settings_outlined,
                               color: Colors.black,
                             )),
-                        title: const Text(''),
+
                         backgroundColor: Colors.grey,
                       ),
                     ],

@@ -56,7 +56,6 @@ class _HomePageState extends State<HomePage> {
       }
     }
     await userController.login(loginData);
-    print(userController.userLoginModel.value.userInfo![0].name);
   }
 
   @override

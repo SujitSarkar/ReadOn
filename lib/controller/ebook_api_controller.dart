@@ -31,7 +31,7 @@ class EbookApiController extends GetxController {
     getPublicationList();
   }
 
-  final String domainName = 'https://readon.genextbd.net';
+  final String domainName = 'http://readon.glamworlditltd.com/ebook/Api';
   RxList<SubjectCategoryModel> subjectCategoryList =
       RxList<SubjectCategoryModel>([]);
   RxList<SubjectSubcategoryModel> subjectSubcategoryListOfCategory =
